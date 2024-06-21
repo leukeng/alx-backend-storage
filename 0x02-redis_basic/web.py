@@ -14,13 +14,11 @@ an expiration time of 10 seconds.
 Tip: Use http://slowwly.robertomurray.co.uk to simulate
 a slow response and test your caching."""
 
-
 import redis
 import requests
 from functools import wraps
 
 r = redis.Redis()
-
 
 def url_access_count(method):
     """decorator for get_page function"""
